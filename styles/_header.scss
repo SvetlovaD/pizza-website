@@ -1,0 +1,300 @@
+header {
+    position: relative;
+
+
+    #placeholder {
+        width: 100%;
+        color: white;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        background-color: rgb(18, 22, 24, 0.9);
+        height: 80px;
+        margin: 0;
+        position: fixed;
+        z-index: 4;
+    
+    
+        #logo {
+            margin: auto 0;
+            margin-left: 220px;
+    
+            img {
+                float: left;
+                margin-right: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            #pizza-logo {
+                font-family: $fontJosefinSans;
+                font-size: 25px;
+                margin: 0;
+            }
+            #pizza-logo2 {
+                font-family: $fontPoppins;
+                letter-spacing: 3px;
+                font-size: 13px;
+                margin: 0;
+    
+                a {
+                    color: $colorOrange;
+                }
+            }
+        }
+    
+        #nav {
+    
+            margin: auto 0;
+    
+            a {
+                color: $colorGrey;
+                text-decoration: none;
+                font-family: $fontPoppins;
+                padding: 0 30px;
+                width: 100%;
+                font-size: 16px;
+                transition: all 0.5s linear;
+    
+                &:hover {
+                    text-decoration: underline 1.75px;
+                    color: #ffffff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #place1 {
+        background-image: url('../img/Screenshot_10.png');
+        opacity: 1;
+        transition: opacity 0.5s linear;
+
+        .btn1 {
+            border: 2px solid $colorOrange;
+            div {
+                background-color: $colorOrange;
+            }
+        }
+    }
+
+    #place3 {
+        background-image: url('../img/bg_1.jpg');
+        opacity: 0;
+        transition: opacity 0.5s linear;
+
+
+        .buttons {
+            margin-top: 30px;
+            .btn3 {
+                border: 2px solid $colorOrange;
+                div {
+                    background-color: $colorOrange;
+                }
+            }
+        }
+
+        .placeholder3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto auto;
+            max-width: 70%;
+
+            .welcome-contains {
+                text-align: left;
+                padding-top: 60px;
+
+                .btns {
+                    text-align: left;
+                }
+                
+            }
+
+            .img-container {
+                padding-top: 120px;
+                margin-right: 40px;
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+        }
+
+    }
+
+    #place2 {
+        background-image: url('../img/bg_1.jpg');
+        opacity: 0;
+        transition: opacity 0.5s linear;
+
+        .buttons {
+            margin-top: 30px;
+            .btn2 {
+                border: 2px solid $colorOrange;
+                div {
+                    background-color: $colorOrange;
+                }
+            }
+        }
+
+        .placeholder2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto auto;
+            max-width: 70%;
+            
+            .welcome-contains {
+                text-align: right;
+                padding-top: 60px;
+
+                .btns {
+                    text-align: right;
+                }
+                
+            }
+
+            .img-container {
+                padding-top: 120px;
+                margin-left: 40px;
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+
+        }
+    }
+    
+    .welcome {
+
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5)
+        }
+    
+        .welcome-contains {
+            height: auto;
+            max-width: 700px;
+            margin: 0 auto;
+            margin-top: 170px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            line-height: 1.4;
+    
+            & p:nth-child(1) {
+                @extend %orangeWords;
+                
+            }
+            & p:nth-child(3) {
+                font-family: $fontPoppins;
+                color: white;
+                margin-top: 20px;
+                font-size: 1.2rem;
+                font-weight: 300;
+                
+            }
+            h1 {
+                font-size: 2.8rem;
+                
+            }
+    
+            .btns {
+                margin-top: 60px;
+                text-align: center;
+    
+                a {
+                    border: 1px solid black;
+                    padding: 15px 20px;
+                    margin: 0 2px;
+                    text-decoration: none;
+                    text-align: center;
+                    font-family: $fontPoppins;
+                    font-size: 14px;
+                    transition: all 0.5s linear;
+                }
+                & a:nth-child(1) {
+                    background-color: $colorOrange;
+                    color: black;
+                    border: 1px solid $colorOrange;
+    
+                    &:hover {
+                        background-color: #e9a220;
+                        border: 1px solid black;
+                    }
+                }
+                & a:nth-child(2) {
+                    color: white;
+                    border: 1px solid white;
+    
+                    &:hover {
+                        color: black;
+                        background-color: #e9a220;
+                        border: 1px solid $colorOrange;
+                    }
+                }
+                
+            }
+            
+        }
+        .buttons {
+            margin-top: 160px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+
+
+            .btn-border {
+                width: 25px;
+                height: 25px;
+                
+                border: 2px solid white;
+                border-radius: 50%;
+                margin: 0 5px;
+                padding: 2.2px;
+                transition: all 0.2s linear;
+
+                &:hover {
+                
+                    border: 2px solid $colorOrange;
+                }
+
+
+                &:hover div {
+                
+                    background-color: $colorOrange;
+                }
+
+                div {
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    border-radius: 50%;
+                    transition: all 0.2s linear;
+                    
+                }
+            }
+            
+        }
+
+    }
+}
+
+
+

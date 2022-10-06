@@ -1,0 +1,55 @@
+@import "configurations";
+@import "header";
+@import "about";
+@import "services";
+@import "gallery";
+@import "blog";
+@import "contact";
+@import "footer";
+
+body {
+    width: 100%;
+    background: url("../img/bg_4.jpg") no-repeat fixed;
+    background-size: cover;
+    
+
+    margin: 0;
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1, h2, h3,h4 {
+    font-family: $fontJosefinSans;
+    color: white;
+    font-weight: 400;
+
+}
+h2 {
+    font-size: 33px;
+}
+a, a:visited {
+    text-decoration: none;
+}
+#temp {
+    height: 500px;
+    background-color: white;
+}
+p {
+    font-family: $fontPoppins;
+}
+
+
+
+
+
+

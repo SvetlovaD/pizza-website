@@ -1,0 +1,55 @@
+$colorBlack: rgb(18, 22, 24);
+$colorOrange: #fac564;
+$colorGrey: rgba(255, 255, 255, 0.7);
+$fontPoppins: 'Poppins', sans-serif;
+$fontJosefinSans: 'Josefin Sans', sans-serif;
+$fontNothing: 'Nothing You Could Do', cursive;
+
+.checkedOrange {
+    border: 2px solid $colorOrange;
+    
+}
+
+.checkedOrangeDiv {
+    background-color: $colorOrange;
+}
+
+.active {
+    color: white;
+    text-decoration: underline;
+}
+
+.unchecked {
+    border: 2px solid white;
+}
+
+.uncheckedDiv {
+    background-color: white;
+}
+
+%orangeWords {
+    font-family: $fontNothing;
+    font-size: 2rem;
+    color: $colorOrange;
+}
+
+%inputConf {
+    border: none;
+    margin-top: 10px;
+    border-bottom: 1.5px solid white;
+    background-color: black;
+    margin-bottom: 30px;
+    outline: none;
+    color: $colorOrange;
+    font-family: $fontPoppins;
+    font-size: 16px;
+}
+
+%labelConf {
+    color: white;
+    position: absolute;
+    font-family: $fontPoppins;
+    font-size: 18px;
+    transition: all 0.3s linear;  
+    pointer-events: none;
+}

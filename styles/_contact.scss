@@ -1,0 +1,89 @@
+#contact {
+    height: 550px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    #map {
+        iframe {
+            width: 100%;
+            height: 550px;
+        }
+    }
+
+    #form-content {
+        padding-left: 80px;
+        padding-top: 60px;
+        padding-left: 100px;
+        h3 {
+            font-size: 29px;
+            margin-bottom: 40px;
+        }
+
+        #names {
+            display: flex;
+            flex-direction: row;
+
+            label {
+                @extend %labelConf;
+                
+            }
+            input {
+                @extend %inputConf;
+            }
+            div {
+                margin: 0 0;
+                margin-right: 40px;
+                position: relative;
+            }
+
+        }
+
+       #form-email {
+          width: 450px;
+          margin-top: 10px;
+
+        label {
+            @extend %labelConf;
+            
+        }
+        input {
+            @extend %inputConf;
+            width: 100%;
+        }
+        }
+
+        #form-area {
+            width: 450px;
+            margin-top: 10px;
+            
+            label {
+                @extend %labelConf;
+                
+            }
+            textarea {
+                @extend %inputConf;
+                width: 100%;
+                height: 150px;
+                margin-bottom: 15px;
+                
+
+            } 
+        }
+
+        button {
+            height: 50px;
+            width: 90px;
+            font-family: $fontPoppins;
+            background-color: $colorOrange;
+            margin-top: 0;
+            transition: all 0.4s linear;
+
+            &:hover {
+                background-color: #e9a220;
+                font-weight: 500;
+                
+            }
+        }
+    }
+}
