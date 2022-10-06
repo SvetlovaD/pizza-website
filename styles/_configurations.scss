@@ -4,28 +4,7 @@ $colorGrey: rgba(255, 255, 255, 0.7);
 $fontPoppins: 'Poppins', sans-serif;
 $fontJosefinSans: 'Josefin Sans', sans-serif;
 $fontNothing: 'Nothing You Could Do', cursive;
-
-.checkedOrange {
-    border: 2px solid $colorOrange;
-    
-}
-
-.checkedOrangeDiv {
-    background-color: $colorOrange;
-}
-
-.active {
-    color: white;
-    text-decoration: underline;
-}
-
-.unchecked {
-    border: 2px solid white;
-}
-
-.uncheckedDiv {
-    background-color: white;
-}
+$colorDarkOrange: #e9a220;
 
 %orangeWords {
     font-family: $fontNothing;

@@ -7,6 +7,20 @@ footer {
         color: $colorGrey;
         font-weight: 200;
         margin-top: 80px;
+
+        a {
+            color: $colorGrey;
+            text-decoration: none;
+
+            &:hover {
+                color: $colorOrange;
+            }
+
+            &:visited {
+                color: $colorGrey;
+               text-decoration: none;
+            }
+        }
     }
 
     #foot {

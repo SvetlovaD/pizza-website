@@ -61,6 +61,11 @@ header {
                     color: #ffffff;
                     font-size: 18px;
                 }
+                
+            }
+            .active {
+                color: $colorOrange;
+                font-size: 18px;
             }
         }
     }
@@ -232,7 +237,7 @@ header {
                     border: 1px solid $colorOrange;
     
                     &:hover {
-                        background-color: #e9a220;
+                        background-color: $colorDarkOrange;
                         border: 1px solid black;
                     }
                 }
@@ -242,7 +247,7 @@ header {
     
                     &:hover {
                         color: black;
-                        background-color: #e9a220;
+                        background-color: $colorDarkOrange;
                         border: 1px solid $colorOrange;
                     }
                 }

@@ -10,7 +10,7 @@
         .photo-items {
             height: 260px;
             width: 100%;
-            cursor: pointer;
+            
             position: relative;
             transition: all 1s linear;
 
@@ -78,6 +78,7 @@
                 margin: 0 auto;
                 border: 1px solid $colorOrange;
                 transition: all 0.5s linear;
+                cursor: pointer;
 
 
                 img {
