@@ -302,4 +302,357 @@ header {
 }
 
 
+@media screen and (max-width: 1170px) {
+
+    header {
+
+        
+        #placeholder {
+            display: flex;
+            flex-direction: row;
+            #logo {
+                margin-left: 80px;
+                margin-right: 100px;
+            }
+
+            #nav {
+                a {
+                    font-size: 15px;
+                    &:hover {
+                        font-size: 16px;
+                    }
+                }
+                .active {
+                    font-size: 16px;
+                }
+            }
+        }
+
+      .welcome {
+        .buttons {
+            margin-top: 215px;
+        }
+        .welcome-contains {
+            max-width: none;
+            h1 {
+                font-size: 28px;
+            }
+            & p:nth-child(3) {
+                font-size: 17px;
+            }
+            .btns {
+                a {
+                    padding: 8px 10px;
+                }
+            }
+        }
+      }
+      #place3 {
+        .placeholder3 {
+            .img-container {
+                margin-top: 40px;
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+    #place2 {
+        .placeholder2 {
+            .img-container {
+                margin-top: 40px;
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }   
+}
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        
+
+        #placeholder {
+            display: flex;
+            flex-direction: row;
+            #logo {
+                margin-left: 60px;
+                margin-right: 50px;
+            }
+
+            #nav {
+                
+                a {
+                    font-size: 14px;
+                    padding: 0 20px;
+                    &:hover {
+                        font-size: 15px;
+                    }
+                }
+                .active {
+                    font-size: 15px;
+                }
+            }
+        }
+        .welcome {
+            .buttons {
+                margin-top: 132px;
+            }
+            .welcome-contains {
+                max-width: none;
+                margin-top: 100px;
+                h1 {
+                    font-size: 20px;
+                }
+                & p:nth-child(3) {
+                    font-size: 14px;
+                }
+                .btns {
+                    
+                    
+                    margin-top: 30px;
+                    
+                    a {
+                        padding: 8px 10px;
+                        margin: 5px 0;
+                        width: auto;
+                        font-size: 12px;
+                    }
+                }
+            }
+          }
+          #place3 {
+            .placeholder3 {
+                .welcome-contains {
+                    .btns {
+                        display: flex;
+                    flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+                .img-container {
+                    margin-top: 40px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        #place2 {
+            .placeholder2 {
+                .welcome-contains {
+                    .btns {
+                        display: flex;
+                    flex-direction: column;
+                        align-items: flex-end;
+                    }
+                }
+                .img-container {
+                    margin-top: 40px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        #place1 {
+            .welcome-contains {
+                margin-top: 200px;
+            }
+        } 
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    header {
+        height: auto;
+
+        #placeholder {
+            #logo {
+                margin-left: 30px;
+                margin-right: 40px;
+                img {
+                    width: 19px;
+                    height: 20px;
+                }
+                #pizza-logo {
+                    font-family: $fontJosefinSans;
+                    font-size: 22px;
+                    margin: 0;
+                }
+                #pizza-logo2 {
+                    font-family: $fontPoppins;
+                    letter-spacing: 3px;
+                    font-size: 11px;
+                    margin: 0;
+                }
+            }
+
+            #nav {
+                
+                a {
+                    font-size: 14px;
+                    padding: 0 15px;
+                    &:hover {
+                        font-size: 15px;
+                    }
+                }
+                .active {
+                    font-size: 15px;
+                }
+            }
+        }
+        .welcome {
+            .buttons {
+                margin-top: 200px;
+            }
+            .welcome-contains {
+                max-width: none;
+                margin-top: 100px;
+                & p:nth-child(1) {
+                    font-size: 20px;
+                    
+                }
+                h1 {
+                    font-size: 18px;
+                }
+                & p:nth-child(3) {
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+                .btns {
+                    
+                    
+                    margin-top: 30px;
+                    
+                    a {
+                        padding: 8px 10px;
+                        margin: 5px 0;
+                        width: auto;
+                        font-size: 12px;
+                    }
+                }
+            }
+          }
+          #place3 {
+            .buttons {
+                margin-top: 83px;
+            }
+        }
+        #place2 {
+            .buttons {
+                margin-top: 67px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        height: auto;
+        #placeholder {
+            #logo {
+                margin-left: 30px;
+                margin-right: 30px;
+                img {
+                    width: 18px;
+                    height: 19px;
+                }
+                #pizza-logo {
+                    font-family: $fontJosefinSans;
+                    font-size: 21px;
+                    margin: 0;
+                }
+                #pizza-logo2 {
+                    font-family: $fontPoppins;
+                    letter-spacing: 3px;
+                    font-size: 10px;
+                    margin: 0;
+                }
+            }
+
+            #nav {
+                
+                a {
+                    font-size: 13px;
+                    padding: 0 12px;
+                    &:hover {
+                        font-size: 14px;
+                    }
+                }
+                .active {
+                    font-size: 14px;
+                }
+            }
+        }
+        .welcome {
+            .buttons {
+                margin-top: 200px;
+            }
+            .welcome-contains {
+                max-width: none;
+                margin-top: 100px;
+                & p:nth-child(1) {
+                    font-size: 20px;
+                    
+                }
+                h1 {
+                    font-size: 18px;
+                }
+                & p:nth-child(3) {
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+                .btns {
+                    
+                    
+                    margin-top: 30px;
+                    
+                    a {
+                        padding: 8px 10px;
+                        margin: 5px 0;
+                        width: auto;
+                        font-size: 12px;
+                    }
+                }
+            }
+          }
+          #place3 {
+            .buttons {
+                margin-top: 83px;
+            }
+            .placeholder3 {
+                flex-direction: column;
+                .img-container {
+                    margin-top: 40px;
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+        #place2 {
+            .placeholder2 {
+                flex-direction: column-reverse;
+                .img-container {
+                    margin-top: 40px;
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
