@@ -20,7 +20,6 @@ header .welcome .welcome-contains p:nth-child(1) {
   color: white;
   position: absolute;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
   transition: all 0.3s linear;
   pointer-events: none;
 }
@@ -997,7 +996,6 @@ header .welcome .buttons .btn-border div {
   height: 550px;
 }
 #contact #form-content {
-  padding-left: 80px;
   padding-top: 60px;
   padding-left: 100px;
 }
@@ -1009,6 +1007,9 @@ header .welcome .buttons .btn-border div {
   display: flex;
   flex-direction: row;
 }
+#contact #form-content #names label {
+  font-size: 18px;
+}
 #contact #form-content #names div {
   margin: 0 0;
   margin-right: 40px;
@@ -1018,12 +1019,18 @@ header .welcome .buttons .btn-border div {
   width: 450px;
   margin-top: 10px;
 }
+#contact #form-content #form-email label {
+  font-size: 18px;
+}
 #contact #form-content #form-email input {
   width: 100%;
 }
 #contact #form-content #form-area {
   width: 450px;
   margin-top: 10px;
+}
+#contact #form-content #form-area label {
+  font-size: 18px;
 }
 #contact #form-content #form-area textarea {
   width: 100%;
@@ -1044,6 +1051,91 @@ header .welcome .buttons .btn-border div {
   font-weight: 500;
 }
 
+@media screen and (max-width: 1050px) {
+  #contact #form-content {
+    padding-top: 40px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 940px) {
+  #contact #form-content {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #contact {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact #form-content {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact #map iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 510px) {
+  #contact #form-content {
+    width: 100%;
+    padding-left: 10px;
+  }
+  #contact #form-content h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  #contact #form-content #names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact #form-content #names label {
+    font-size: 15px;
+  }
+  #contact #form-content #names div {
+    margin-right: 20px;
+  }
+  #contact #form-content #form-email {
+    width: 430px;
+  }
+  #contact #form-content #form-email label {
+    font-size: 15px;
+  }
+  #contact #form-content #form-area {
+    width: 430px;
+  }
+  #contact #form-content #form-area label {
+    font-size: 15px;
+  }
+}
+@media (max-width: 460px) {
+  #contact #form-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #contact #form-content #names {
+    width: 100%;
+  }
+  #contact #form-content #names input {
+    width: 100%;
+  }
+  #contact #form-content #form-email {
+    width: 100%;
+    padding-right: 10px;
+  }
+  #contact #form-content #form-area {
+    width: 100%;
+    padding-right: 10px;
+  }
+  #contact #form-content button {
+    width: 70px;
+    height: 40px;
+  }
+}
 footer {
   background-color: rgb(18, 22, 24);
   height: 550px;
