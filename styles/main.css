@@ -671,6 +671,128 @@ header .welcome .buttons .btn-border div {
   font-size: 15px;
 }
 
+@media (max-width: 1000px) {
+  #about {
+    height: auto;
+  }
+  #about #about-photo img {
+    height: 300px;
+    width: 100%;
+  }
+  #about #about-desc {
+    padding: 15px 30px;
+  }
+  #about #about-desc p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 915px) {
+  #intro {
+    height: auto;
+  }
+  #intro #info {
+    padding-right: 40px;
+  }
+  #intro #info .container-info {
+    margin: 6px 12px;
+  }
+  #intro #info .container-info h4 {
+    font-size: 16px;
+  }
+  #intro #info .container-info p {
+    font-size: 12px;
+  }
+  #about #about-desc h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+  #about #about-desc h2 span {
+    color: #fac564;
+  }
+  #about #about-desc h2 img {
+    width: 25px;
+    height: 25px;
+  }
+  #about #about-desc p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 750px) {
+  #about #about-photo img {
+    height: 260px;
+    width: 100%;
+  }
+  #about #about-desc h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+  #about #about-desc h2 span {
+    color: #fac564;
+  }
+  #about #about-desc h2 img {
+    width: 25px;
+    height: 25px;
+  }
+  #about #about-desc p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 580px) {
+  #intro {
+    display: flex;
+    flex-direction: column;
+  }
+  #intro #info {
+    padding: 7px 15px;
+  }
+  #intro #social {
+    padding: 20px 0;
+    justify-content: center;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #about #about-photo img {
+    height: 320px;
+  }
+  #about #about-desc h2 {
+    text-align: center;
+  }
+  #about #about-desc p {
+    text-align: center;
+  }
+}
+@media (max-width: 415px) {
+  #about #about-photo img {
+    height: 250px;
+  }
+  #intro img {
+    width: 15px;
+    height: 15px;
+  }
+  #intro #info {
+    padding: 7px 8px;
+  }
+  #intro #info .container-info img {
+    margin-right: 10px;
+  }
+  #intro #info .container-info h4 {
+    font-size: 14px;
+  }
+  #intro #info .container-info p {
+    font-size: 11px;
+  }
+  #intro #social img {
+    width: 19px;
+    height: 19px;
+  }
+  #intro #social a img:hover {
+    width: 23px;
+    height: 23px;
+  }
+}
 #services {
   height: 600px;
   background: url(../img/food.png) repeat;
