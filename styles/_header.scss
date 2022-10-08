@@ -554,7 +554,7 @@ header {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
     header {
         height: auto;
         #placeholder {
@@ -683,8 +683,9 @@ header {
 }
 
 
-@media screen and (max-width: 415px) {
+@media (max-width: 415px) {
     header {
+        height: auto;
         #placeholder {
             #nav {
                 display: grid;
@@ -714,6 +715,7 @@ header {
             }
         }
         .welcome {
+            height: 97%;
             .buttons {
                 margin-top: 208px;
             }

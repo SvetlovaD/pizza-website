@@ -452,7 +452,7 @@ header .welcome .buttons .btn-border div {
     margin-top: 67px;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   header {
     height: auto;
   }
@@ -560,7 +560,10 @@ header .welcome .buttons .btn-border div {
     margin: 0;
   }
 }
-@media screen and (max-width: 415px) {
+@media (max-width: 415px) {
+  header {
+    height: auto;
+  }
   header #placeholder #nav {
     display: grid;
     grid-template: 1fr 1fr/repeat(3, 1fr);
@@ -578,6 +581,9 @@ header .welcome .buttons .btn-border div {
   header #place3 .placeholder3 .img-container img {
     width: 200px;
     height: 200px;
+  }
+  header .welcome {
+    height: 97%;
   }
   header .welcome .buttons {
     margin-top: 208px;
@@ -1196,6 +1202,146 @@ footer #foot #foot-contacts .foot-contacts-items img {
   height: 17px;
 }
 
+@media screen and (max-width: 1300px) {
+  footer #foot #about-us #about-us-icons div {
+    height: 45px;
+    padding-top: 8px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  footer {
+    height: auto;
+    padding: 20px 20px;
+  }
+  footer #foot {
+    padding-top: 50px;
+  }
+  footer #foot #about-us {
+    margin-right: 30px;
+  }
+  footer #foot #about-us p {
+    font-size: 14px;
+  }
+  footer #foot #about-us #about-us-icons div {
+    height: 35px;
+    padding-top: 6px;
+  }
+  footer #foot #about-us #about-us-icons div img {
+    width: 20px;
+    height: 20px;
+  }
+  footer #foot #foot-blog {
+    margin-right: 30px;
+  }
+  footer #foot #foot-services {
+    margin-right: 30px;
+  }
+  footer #foot #foot-services a {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  footer #foot #foot-contacts .foot-contacts-items {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 975px) {
+  footer #foot #foot-blog #foot-blog-items .foot-item .foot-item-desc .number {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 930px) {
+  footer #foot h3 {
+    font-size: 16px;
+  }
+  footer #foot #about-us #about-us-icons div {
+    height: 28px;
+    padding-top: 6px;
+  }
+  footer #foot #about-us #about-us-icons div img {
+    width: 15px;
+    height: 15px;
+  }
+  footer #foot #foot-blog #foot-blog-items .foot-item .foot-item-desc .number {
+    margin-right: 8px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 890px) {
+  footer #foot #foot-blog #foot-blog-items .foot-item .foot-item-desc .number {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 860px) {
+  footer #foot {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    row-gap: 20px;
+  }
+  footer #foot #about-us {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  footer #foot #about-us p {
+    margin-bottom: 40px;
+  }
+  footer #foot #about-us #about-us-icons div {
+    height: 45px;
+    width: 45px;
+    padding-top: 12px;
+  }
+  footer #foot #about-us #about-us-icons div img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    padding-right: 8px;
+  }
+  footer #bye {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  footer #foot #about-us {
+    width: 90%;
+  }
+  footer #foot #about-us #about-us-icons div {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer #bye {
+    margin-top: 30px;
+    font-size: 13px;
+  }
+  footer #foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  footer #foot #about-us #about-us-icons div {
+    margin: 0 auto;
+  }
+  footer #foot #foot-blog {
+    margin: 0 auto;
+  }
+  footer #foot #foot-blog #foot-blog-items .foot-item h4 {
+    font-size: 17px;
+    text-align: left;
+  }
+  footer #foot #foot-blog #foot-blog-items .foot-item .foot-item-desc .number {
+    margin-right: 13px;
+    font-size: 14px;
+  }
+  footer #foot #foot-contacts {
+    margin: 0 auto;
+  }
+  footer #foot #foot-contacts .foot-contacts-items div:nth-child(2) {
+    text-align: left;
+  }
+}
 #home-menu {
   height: 600px;
   display: grid;
