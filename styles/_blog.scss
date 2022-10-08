@@ -105,3 +105,188 @@
 
    }
 }
+
+
+@media (max-width:1000px) {
+    #blog {
+        height: auto;
+
+        p {
+            font-size: 15px;
+        }
+
+        #blog-container {
+            .blog-items {
+                overflow: hidden;
+                width: 100%;
+                p {
+                    font-size: 14px;
+                }
+                h3 {
+                    margin-top: 15px;
+                }
+                .blog-img {
+                    img {
+                        height: 220px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:880px) {
+    #blog {
+        #blog-container {
+            .blog-items {
+                .blog-img {
+                    img {
+                        height: 200px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:830px) {
+    #blog {
+        h2 {
+            font-size: 27px;
+        }
+        #blog-container {
+            .blog-items {
+                .blog-img {
+                    img {
+                        height: 180px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:750px) {
+    #blog {
+        & p:first-of-type {
+            margin-bottom: 10px;
+            
+        }
+        #blog-container {
+            .blog-items {
+                .blog-img {
+                    img {
+                        height: 160px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    #blog {
+        #blog-container {
+            .blog-items {
+                p {
+                    font-size: 12px;
+                }
+                .blog-img {
+                    img {
+                        height: 140px; 
+                    }
+                }
+                .blog-desc {
+                    width: 100%;
+                    & p:nth-child(2) {
+                        width: 50px;
+                    }
+                    .number {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:660px) {
+    #blog {
+        #blog-container {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            .blog-items {
+                
+                width: 100%;
+                margin: 30px 0;
+                .blog-img {
+                    overflow: hidden;
+                    width: 60%;
+                    margin: 0 auto;
+                    img {
+                        height: 280px; 
+                    }
+                }
+                .blog-desc {
+                    margin-top: 8px;
+                    justify-content: center;
+                    & p:nth-child(1) {
+                        width: 120px;
+                    }
+                    & p:nth-child(2) {
+                        width: 70px;
+                    }
+                }
+                h3 {
+                    text-align: center;
+                }
+                & p:last-child {
+                    width: 90%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:550px) {
+    #blog {
+        #blog-container {
+            .blog-items {
+                .blog-img {
+                    img {
+                        height: 250px; 
+                    }
+                }
+                .blog-desc {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:415px) {
+    #blog {
+        & p:first-of-type {
+            width: 80%;  
+        }
+        h2 {
+            font-size: 21px;
+        }
+        #blog-container {
+            .blog-items {
+                .blog-img {
+                    width: 70%;
+                    img {
+                        height: 200px; 
+                    }
+                }
+                .blog-desc {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
