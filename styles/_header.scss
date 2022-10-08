@@ -594,17 +594,21 @@ header {
         }
         .welcome {
             .buttons {
-                margin-top: 200px;
+                margin-top: 285px;
+                .btn-border {
+                    width: 20px;
+                    height: 20px;
+                }
             }
             .welcome-contains {
                 max-width: none;
                 margin-top: 100px;
                 & p:nth-child(1) {
-                    font-size: 20px;
+                    font-size: 22px;
                     
                 }
                 h1 {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
                 & p:nth-child(3) {
                     font-size: 13px;
@@ -626,10 +630,69 @@ header {
           }
           #place3 {
             .buttons {
-                margin-top: 83px;
+                margin-top: 30px;
             }
             .placeholder3 {
                 flex-direction: column;
+                .welcome-contains {
+                    text-align: center;
+                    margin-top: 0;
+                    padding-top: 15px;
+                    .btns {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 15px;
+                    a {
+                        margin-left: 8px;
+                    }
+                    }
+                }
+                .img-container {
+                    margin: 0;
+                    
+                }
+            }
+        }
+        #place2 {
+            .buttons {
+                margin-top: 30px;
+            }
+            .placeholder2 {
+                flex-direction: column-reverse;
+                .welcome-contains {
+                    text-align: center;
+                    margin-top: 0;
+                    padding-top: 15px;
+                    .btns {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 15px;
+                    a {
+                        margin-left: 8px;
+                    }
+                    }
+                }
+                .img-container {
+                    margin: 0;
+                    
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    header {
+        #placeholder {
+            #nav {
+                display: grid;
+                grid-template: 1fr 1fr / repeat(3, 1fr);
+            }
+        }
+        #place2 {
+            .placeholder2 {
                 .img-container {
                     margin-top: 40px;
                     img {
@@ -639,9 +702,8 @@ header {
                 }
             }
         }
-        #place2 {
-            .placeholder2 {
-                flex-direction: column-reverse;
+        #place3 {
+            .placeholder3 {
                 .img-container {
                     margin-top: 40px;
                     img {
@@ -649,6 +711,11 @@ header {
                         height: 200px;
                     }
                 }
+            }
+        }
+        .welcome {
+            .buttons {
+                margin-top: 208px;
             }
         }
     }

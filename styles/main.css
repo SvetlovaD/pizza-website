@@ -486,17 +486,21 @@ header .welcome .buttons .btn-border div {
     font-size: 14px;
   }
   header .welcome .buttons {
-    margin-top: 200px;
+    margin-top: 285px;
+  }
+  header .welcome .buttons .btn-border {
+    width: 20px;
+    height: 20px;
   }
   header .welcome .welcome-contains {
     max-width: none;
     margin-top: 100px;
   }
   header .welcome .welcome-contains p:nth-child(1) {
-    font-size: 20px;
+    font-size: 22px;
   }
   header .welcome .welcome-contains h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
   header .welcome .welcome-contains p:nth-child(3) {
     font-size: 13px;
@@ -512,10 +516,61 @@ header .welcome .buttons .btn-border div {
     font-size: 12px;
   }
   header #place3 .buttons {
-    margin-top: 83px;
+    margin-top: 30px;
   }
   header #place3 .placeholder3 {
     flex-direction: column;
+  }
+  header #place3 .placeholder3 .welcome-contains {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15px;
+  }
+  header #place3 .placeholder3 .welcome-contains .btns {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  header #place3 .placeholder3 .welcome-contains .btns a {
+    margin-left: 8px;
+  }
+  header #place3 .placeholder3 .img-container {
+    margin: 0;
+  }
+  header #place2 .buttons {
+    margin-top: 30px;
+  }
+  header #place2 .placeholder2 {
+    flex-direction: column-reverse;
+  }
+  header #place2 .placeholder2 .welcome-contains {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15px;
+  }
+  header #place2 .placeholder2 .welcome-contains .btns {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  header #place2 .placeholder2 .welcome-contains .btns a {
+    margin-left: 8px;
+  }
+  header #place2 .placeholder2 .img-container {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  header #placeholder #nav {
+    display: grid;
+    grid-template: 1fr 1fr/repeat(3, 1fr);
+  }
+  header #place2 .placeholder2 .img-container {
+    margin-top: 40px;
+  }
+  header #place2 .placeholder2 .img-container img {
+    width: 200px;
+    height: 200px;
   }
   header #place3 .placeholder3 .img-container {
     margin-top: 40px;
@@ -524,15 +579,8 @@ header .welcome .buttons .btn-border div {
     width: 200px;
     height: 200px;
   }
-  header #place2 .placeholder2 {
-    flex-direction: column-reverse;
-  }
-  header #place2 .placeholder2 .img-container {
-    margin-top: 40px;
-  }
-  header #place2 .placeholder2 .img-container img {
-    width: 200px;
-    height: 200px;
+  header .welcome .buttons {
+    margin-top: 208px;
   }
 }
 #intro {
