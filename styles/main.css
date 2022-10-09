@@ -651,7 +651,7 @@ header .welcome .buttons .btn-border div {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#about #about-photo img {
+#about #about-photo iframe {
   height: 400px;
   width: 100%;
 }
@@ -684,7 +684,7 @@ header .welcome .buttons .btn-border div {
   #about {
     height: auto;
   }
-  #about #about-photo img {
+  #about #about-photo iframe {
     height: 300px;
     width: 100%;
   }
@@ -727,7 +727,7 @@ header .welcome .buttons .btn-border div {
   }
 }
 @media (max-width: 750px) {
-  #about #about-photo img {
+  #about #about-photo iframe {
     height: 260px;
     width: 100%;
   }
@@ -763,7 +763,7 @@ header .welcome .buttons .btn-border div {
     display: flex;
     flex-direction: column;
   }
-  #about #about-photo img {
+  #about #about-photo iframe {
     height: 320px;
   }
   #about #about-desc h2 {
@@ -774,7 +774,7 @@ header .welcome .buttons .btn-border div {
   }
 }
 @media (max-width: 415px) {
-  #about #about-photo img {
+  #about #about-photo iframe {
     height: 250px;
   }
   #intro img {
