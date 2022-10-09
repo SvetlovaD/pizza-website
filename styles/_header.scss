@@ -461,11 +461,11 @@ header {
                 }
             }
         }
-        #place1 {
+        /* #place1 {
             .welcome-contains {
-                margin-top: 200px;
+                margin-top: 90px;
             }
-        } 
+        }  */
     }
 }
 
@@ -715,11 +715,24 @@ header {
             }
         }
         .welcome {
-            height: 97%;
+            height: 100%;
             .buttons {
                 margin-top: 208px;
             }
         }
+    }
+}
+
+@media (max-width:896px) and (orientation:landscape) {
+    header {
+        #placeholder {
+            #place1 {
+                .welcome-contains {
+                    margin-top: 0px;
+                }
+            }
+        }
+        
     }
 }
 

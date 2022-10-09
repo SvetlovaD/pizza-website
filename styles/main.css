@@ -317,6 +317,13 @@ header .welcome .buttons .btn-border div {
   }
 }
 @media screen and (max-width: 960px) {
+  header {
+    /* #place1 {
+        .welcome-contains {
+            margin-top: 90px;
+        }
+    }  */
+  }
   header #placeholder {
     display: flex;
     flex-direction: row;
@@ -380,9 +387,6 @@ header .welcome .buttons .btn-border div {
   header #place2 .placeholder2 .img-container img {
     width: 300px;
     height: 300px;
-  }
-  header #place1 .welcome-contains {
-    margin-top: 200px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -582,10 +586,15 @@ header .welcome .buttons .btn-border div {
     height: 200px;
   }
   header .welcome {
-    height: 97%;
+    height: 100%;
   }
   header .welcome .buttons {
     margin-top: 208px;
+  }
+}
+@media (max-width: 896px) and (orientation: landscape) {
+  header #placeholder #place1 .welcome-contains {
+    margin-top: 0px;
   }
 }
 #intro {
