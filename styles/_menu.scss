@@ -24,11 +24,11 @@
 
             .img-wpapper {
                 overflow: hidden;
-            }
+            
 
             img {
                 width: 100%;
-                height: 240px;
+                height: 100%;
                 transition: all 0.5s linear;
                 cursor: pointer;
                 
@@ -39,6 +39,7 @@
                     
                 }
             }
+        }
 
             .menu-desc {
                 padding: 30px 25px;
@@ -157,5 +158,219 @@
 
         }
 
+    }
+}
+
+
+@media (max-width:1290px) {
+    #menu1 {
+        #menu-blocks {
+            .menu-items {
+                .menu-desc {
+                    padding: 15px 15px;
+                }
+                .menu-order {
+                    button {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    #menu1 {
+        #menu-blocks {
+            .menu-items {
+                .menu-desc {
+                    h3 {
+                        font-size: 16px;
+                        margin-bottom: 4px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .menu-order {
+                    margin-top: 7px;
+                    button {
+                        margin-left: 15px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:920px) {
+    #menu1 {
+        #menu-blocks {
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+
+            .reserve {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .img-wpapper {
+                    width: 100%;
+                }
+                .menu-desc {
+                    padding: 15px 0;
+                    width: 100%;
+                    h3 {
+                        padding-left: 15px;
+                    }
+                    p {
+                        padding-left: 15px;
+                    }
+                }
+            }
+
+            .menu-items {
+                .menu-order {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #menu2 {
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 50px;
+        #pricing-box {
+            .pizza-block {
+                .pizza-item {
+                    p {
+                        text-align: left;
+                    }
+                }
+            } 
+        } 
+    }
+}
+
+
+@media (max-width:690px) {
+    #menu1 {
+        h2 {
+            font-size: 26px;
+        }
+        p {
+            font-size: 14px;
+            width: 70%;
+        }
+        #menu-blocks {
+            .menu-items {
+                .menu-desc {
+                    p {
+                        font-size: 11px;
+                    } 
+                }
+                .menu-order {
+                    margin-top: 15px;
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    #menu2 {
+        h2 {
+            font-size: 26px;
+        }
+        p {
+            font-size: 14px;
+            width: 70%;
+        }
+        #pricing-box {
+            .pizza-block {
+                .pizza-item {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            } 
+        }  
+    }
+}
+
+
+@media (max-width:610px) {
+    #menu1 {
+        #menu-blocks {
+            grid-template: repeat(6, 1fr) / 1fr;
+            .menu-items {
+                .menu-desc {
+                    p {
+                        font-size: 16px;
+                        padding-top: 20px;
+                    }
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+                .menu-order {
+                    padding-top: 30px;
+                    p {
+                        padding-top: 0;
+                        padding-left: 20px;
+                    }
+                    button {
+                        height: 35px;
+                    width: 70px;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+@media (max-width:480px) {
+    #menu1 {
+        #menu-blocks {
+            .menu-items {
+                .menu-desc {
+                    p {
+                        font-size: 11px;
+                    }
+                    h3 {
+                        font-size: 19px;
+                    } 
+                }
+                .menu-order {
+                    padding-top: 15px;
+                    p {
+                        font-size: 13px;
+                        padding-top: 0;
+                        padding-left: 20px;
+                    }
+                    button {
+                        height: 25px;
+                        width: 60px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #menu2 {
+        #pricing-box {
+            flex-direction: column;
+            .pizza-block {
+                .pizza-item {
+                    .pizza-desc {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

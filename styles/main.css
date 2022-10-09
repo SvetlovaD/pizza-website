@@ -1925,13 +1925,13 @@ footer #foot #foot-contacts .foot-contacts-items img {
 #menu1 #menu-blocks .menu-items .img-wpapper {
   overflow: hidden;
 }
-#menu1 #menu-blocks .menu-items img {
+#menu1 #menu-blocks .menu-items .img-wpapper img {
   width: 100%;
-  height: 240px;
+  height: 100%;
   transition: all 0.5s linear;
   cursor: pointer;
 }
-#menu1 #menu-blocks .menu-items img:hover {
+#menu1 #menu-blocks .menu-items .img-wpapper img:hover {
   transform: rotate(45deg) scale(1.3);
 }
 #menu1 #menu-blocks .menu-items .menu-desc {
@@ -2034,6 +2034,141 @@ footer #foot #foot-contacts .foot-contacts-items img {
   font-size: 16px;
 }
 
+@media (max-width: 1290px) {
+  #menu1 #menu-blocks .menu-items .menu-desc {
+    padding: 15px 15px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order button {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  #menu1 #menu-blocks .menu-items .menu-desc h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-desc p {
+    font-size: 12px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order {
+    margin-top: 7px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order button {
+    margin-left: 15px;
+    height: 25px;
+  }
+}
+@media (max-width: 920px) {
+  #menu1 #menu-blocks {
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+  #menu1 #menu-blocks .reserve {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #menu1 #menu-blocks .reserve .img-wpapper {
+    width: 100%;
+  }
+  #menu1 #menu-blocks .reserve .menu-desc {
+    padding: 15px 0;
+    width: 100%;
+  }
+  #menu1 #menu-blocks .reserve .menu-desc h3 {
+    padding-left: 15px;
+  }
+  #menu1 #menu-blocks .reserve .menu-desc p {
+    padding-left: 15px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order {
+    margin-top: 25px;
+  }
+  #menu2 {
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+  #menu2 #pricing-box .pizza-block .pizza-item p {
+    text-align: left;
+  }
+}
+@media (max-width: 690px) {
+  #menu1 h2 {
+    font-size: 26px;
+  }
+  #menu1 p {
+    font-size: 14px;
+    width: 70%;
+  }
+  #menu1 #menu-blocks .menu-items .menu-desc p {
+    font-size: 11px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order {
+    margin-top: 15px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order p {
+    font-size: 13px;
+  }
+  #menu2 h2 {
+    font-size: 26px;
+  }
+  #menu2 p {
+    font-size: 14px;
+    width: 70%;
+  }
+  #menu2 #pricing-box .pizza-block .pizza-item p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 610px) {
+  #menu1 #menu-blocks {
+    grid-template: repeat(6, 1fr)/1fr;
+  }
+  #menu1 #menu-blocks .menu-items .menu-desc p {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-desc h3 {
+    font-size: 24px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order {
+    padding-top: 30px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order p {
+    padding-top: 0;
+    padding-left: 20px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order button {
+    height: 35px;
+    width: 70px;
+  }
+}
+@media (max-width: 480px) {
+  #menu1 #menu-blocks .menu-items .menu-desc p {
+    font-size: 11px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-desc h3 {
+    font-size: 19px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order {
+    padding-top: 15px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order p {
+    font-size: 13px;
+    padding-top: 0;
+    padding-left: 20px;
+  }
+  #menu1 #menu-blocks .menu-items .menu-order button {
+    height: 25px;
+    width: 60px;
+    margin-left: 20px;
+  }
+  #menu2 #pricing-box {
+    flex-direction: column;
+  }
+  #menu2 #pricing-box .pizza-block .pizza-item .pizza-desc p {
+    font-size: 14px;
+  }
+}
 body {
   width: 100%;
   background: url("../img/bg_4.jpg") no-repeat fixed;
